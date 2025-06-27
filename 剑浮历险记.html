@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星际探险 - 我的游戏作品</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f1a;
+            color: #fff;
+            background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        .overlay {
+            background-color: rgba(15, 15, 26, 0.85);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #4fc3f7;
+            text-shadow: 0 0 10px rgba(79, 195, 247, 0.5);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #b3e5fc;
+            margin-top: 10px;
+        }
+        
+        .game-container {
+            max-width: 900px;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .game-preview {
+            width: 100%;
+            max-width: 800px;
+            border: 3px solid #4fc3f7;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(79, 195, 247, 0.5);
+        }
+        
+        .game-screenshot {
+            width: 100%;
+            display: block;
+        }
+        
+        .game-info {
+            background-color: rgba(31, 31, 51, 0.9);
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 800px;
+        }
+        
+        .game-title {
+            color: #4fc3f7;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        
+        .game-description {
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .game-features {
+            margin-bottom: 25px;
+        }
+        
+        .game-features li {
+            margin-bottom: 8px;
+        }
+        
+        .play-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #4fc3f7, #1976d2);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(25, 118, 210, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .play-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(25, 118, 210, 0.6);
+        }
+        
+        .music-control {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(31, 31, 51, 0.9);
+            padding: 10px 15px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .music-control button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        
+        .music-info {
+            font-size: 0.9em;
+            margin-left: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: auto;
+            color: #b3e5fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <h1>剑浮历险记</h1>
+            <div class="subtitle">后巷帮派的秘密</div>
+        </header>
+        
+        <div class="game-container">
+            <div class="game-preview">
+                <img src="F:\unity素材\Picture\剑浮三破立绘.jpg" alt="肉斩骨断" class="game-screenshot">
+            </div>
+            
+            <div class="game-info">
+                <h2 class="game-title">关于游戏</h2>
+                <p class="game-description">
+                    你说的对，但是《剑浮历险记》是由米哈游自主研发的一款全新开放世界冒险游戏。
+                    游戏发生在一个被称作「都市」的幻想世界，在这里，被神选中的人将被授予「神之眼」，导引元素之力。
+                    你将扮演一位名为「旅行者」的神秘角色在自由的旅行中邂逅性格各异、能力独特的同伴们，
+                    和他们一起击败强敌，找回失散的亲人——同时，逐步发掘「都市」的真相。
+                </p>
+                
+                <h3>游戏特色：</h3>
+                <ul class="game-features">
+                    <li>精美立绘与插画cg</li>
+                    <li>卓越手感的战斗体验与沉浸式的成长体系</li>
+                    <li>丰富的任务和剧情线</li>
+                    <li>动态的boss战斗系统</li>
+                    <li>美丽的景观和视觉效果</li>
+                </ul>
+                
+                <a href="#" class="play-button">开始游戏</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 剑浮历险记开发团队 | 联系我们: 853495310@qq.com</p>
+        </footer>
+        
+        <!-- 音乐播放控制 -->
+        <div class="music-control">
+            <button id="prev-btn" title="上一首">⏮</button>
+            <button id="play-btn" title="播放">▶</button>
+            <button id="next-btn" title="下一首">⏭</button>
+            <span class="music-info">肉斩骨断</span>
+        </div>
+        
+        <!-- 音频元素 -->
+        <audio id="bg-music" loop>
+            <source src="F:\unity素材\Music\肉斩骨断主界面.mp3" type="audio/mp3">
+            您的浏览器不支持音频元素。
+        </audio>
+    </div>
+    
+    <script>
+        // 音乐播放控制
+        const bgMusic = document.getElementById('bg-music');
+        const playBtn = document.getElementById('play-btn');
+        let isPlaying = false;
+        
+        // 播放/暂停按钮功能
+        playBtn.addEventListener('click', function() {
+            if (isPlaying) {
+                bgMusic.pause();
+                playBtn.innerHTML = '▶';
+                playBtn.setAttribute('title', '播放');
+            } else {
+                bgMusic.play();
+                playBtn.innerHTML = '⏸';
+                playBtn.setAttribute('title', '暂停');
+            }
+            isPlaying = !isPlaying;
+        });
+        
+        // 下一首按钮功能（虽然只有一首，但保留功能）
+        document.getElementById('next-btn').addEventListener('click', function() {
+            bgMusic.currentTime = 0;
+            if (!isPlaying) {
+                bgMusic.play();
+                isPlaying = true;
+                playBtn.innerHTML = '⏸';
+                playBtn.setAttribute('title', '暂停');
+            }
+        });
+        
+        // 上一首按钮功能（虽然只有一首，但保留功能）
+        document.getElementById('prev-btn').addEventListener('click', function() {
+            bgMusic.currentTime = 0;
+            if (!isPlaying) {
+                bgMusic.play();
+                isPlaying = true;
+                playBtn.innerHTML = '⏸';
+                playBtn.setAttribute('title', '暂停');
+            }
+        });
+        
+        // 页面加载后自动播放音乐（可选，有些浏览器会阻止自动播放）
+        window.addEventListener('load', function() {
+            // 尝试自动播放，但可能会被浏览器阻止
+            const playPromise = bgMusic.play();
+            
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    // 自动播放被阻止，显示播放按钮
+                    console.log('自动播放被阻止，用户需要手动点击播放');
+                    isPlaying = false;
+                    playBtn.innerHTML = '▶';
+                }).then(() => {
+                    // 自动播放成功
+                    isPlaying = true;
+                    playBtn.innerHTML = '⏸';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
